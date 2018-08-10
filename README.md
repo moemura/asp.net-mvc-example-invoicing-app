@@ -31,13 +31,13 @@
 
 
 
-# ASP.NET MVC3 Invoicing Application
+# ASP.NET MVC5 Invoicing Application
 
- * This is a **sample invoicing application** used for **ASP.NET MVC3 training purposes**. 
- * This is a good code base to learn ASP.NET MVC3, since it covers many areas and development techniques.
+ * This is a **sample invoicing application** used for **ASP.NET MVC5 training purposes**. 
+ * This is a good code base to learn ASP.NET MVC5, since it covers many areas and development techniques.
  * I am using it as a personal invoicing tool for my freelancing activity, you may use it as well for this or any other purpose (it is very **easy to customize** to fit your needs) 
- * The solution has been created with **Visual Studio 2010 Express**, but you can open it with other versions of VS 2010.
- * Unit tests have been written with [NUnit](http://www.nunit.org/). [Moq](http://code.google.com/p/moq/) has been used for object mocking.
+ * The solution has been created with **Visual Studio 2017**.
+ * Unit tests have been written with [NUnit](http://www.nunit.org/). [Moq](https://github.com/moq/moq4) has been used for object mocking.
 
 ## Online Demo
 
@@ -45,7 +45,7 @@
 
 ## How to best use this code:
 
- * This application shows **how to create an ASP.NET MVC application from scratch.** and how to use some of the cool features of ASP.NET MVC3 like:
+ * This application shows **how to create an ASP.NET MVC application from scratch.** and how to use some of the cool features of ASP.NET MVC5 like:
    * **Code First**
    * **Entity Framework** and **LINQ**
    * **Razor** view engine 
@@ -62,10 +62,11 @@
 
 ## Installation
 
- * Download the code and open with Visual Studio 2010 Express or above.
+ * Download the code and open with Visual Studio 2017.
  * NuGet packages are included. If you have any problem please follow [this instructions](http://stackoverflow.com/questions/6876732/how-do-i-get-nuget-to-install-update-all-the-packages-in-the-packages-config)
  * By default the project is using SQL Server Compact database. You can easily change it to use SQL Server Express or above by modifying web.config file (connectionStrings section).
- * By using Code First and EF 4.1 the database will be recreated when you first run the project.
+ * By using Code First and EF 6 the database will be recreated when you first run the project.
+ * Install https://github.com/ErikEJ/SqlCeToolbox to manage SQL CE database inside Visual Studio.
 
 ### Altering connectionStrings section 
 
