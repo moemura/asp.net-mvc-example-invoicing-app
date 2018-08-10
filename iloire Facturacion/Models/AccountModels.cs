@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Globalization;
-using System.Web.Mvc;
-using System.Web.Security;
 
 namespace iloire_Facturacion.Models
 {
-    using CompareAttribute = System.Web.Mvc.CompareAttribute;
-
     public class ChangePasswordModel
     {
         [Required]
