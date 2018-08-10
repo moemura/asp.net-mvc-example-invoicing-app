@@ -14,7 +14,7 @@ public class Invoice
     public int InvoiceID { get; set; }
 
     [DisplayName("Invoice Number")]
-    public int InvoiceNumber { get; set; }
+    public int? InvoiceNumber { get; set; }
 
     public bool IsProposal {
         get {
