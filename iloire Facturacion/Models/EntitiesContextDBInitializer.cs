@@ -48,7 +48,7 @@ public class EntitiesContextInitializer : DropCreateDatabaseIfModelChanges<Invoi
         #endregion
 
         #region Add some dummy random invoices
-        var dummy_services = new string[] { "ASP.NET MVC3 training", ".NET training, ASP.NET MVC3 consultancy", "ASP.NET MVC3 in-house training" };
+        var dummy_services = new string[] { "ASP.NET MVC5 training", ".NET training, ASP.NET MVC5 consultancy", "ASP.NET MVC5 in-house training" };
 
         int invoice_number = 1;
         for (int m= 1; m <= DateTime.Now.Month; m++)

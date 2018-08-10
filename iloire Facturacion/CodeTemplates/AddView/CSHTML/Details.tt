@@ -2,7 +2,7 @@
 	Iván Loire - www.iloire.com
 	Please readme README file for license terms.
 
-	ASP.NET MVC3 ACME Invocing app (demo app for training purposes)
+	ASP.NET MVC5 ACME Invocing app (demo app for training purposes)
 *@
 
 <#@ template language="C#" HostSpecific="True" #>

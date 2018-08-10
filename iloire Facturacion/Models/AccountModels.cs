@@ -7,6 +7,7 @@ using System.Web.Security;
 
 namespace iloire_Facturacion.Models
 {
+    using CompareAttribute = System.Web.Mvc.CompareAttribute;
 
     public class ChangePasswordModel
     {

@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Web Developer Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iloire Facturacion", "iloire Facturacion\iloire Facturacion.csproj", "{1895D1C8-FDCE-4BB7-839F-ADB779ED1EC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iloire Facturacion Tests", "iloire Facturacion Tests\iloire Facturacion Tests.csproj", "{F54F4D12-10BE-4084-8470-5690D7831A44}"
@@ -22,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55841396-E4C6-43DD-AF89-BD180DEF5B4A}
 	EndGlobalSection
 EndGlobal
