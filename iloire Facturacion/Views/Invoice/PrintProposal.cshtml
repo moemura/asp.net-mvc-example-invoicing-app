@@ -93,25 +93,28 @@
  </table>
    
 
-<h3><h3>@Resources.Print.Quote :</h3>
+<h3>@Resources.Print.Quote :</h3>
 
 <table class="zebra-striped proposal">
     <thead>
-        <th>
-            @Resources.Print.Invoice_Item
-        </th>
-        <th width="40">
-            @Resources.Print.Invoice_Qty
-        </th>
-        <th width="75">
-            @Resources.Print.Invoice_Price
-        </th>
-        <th width="80">
-            @Resources.Print.Invoice_Total
-        </th>
-        @if (ViewBag.Print != true){
-        <th width="100"></th>
-        }
+        <tr>
+            <th>
+                @Resources.Print.Invoice_Item
+            </th>
+            <th width="40">
+                @Resources.Print.Invoice_Qty
+            </th>
+            <th width="75">
+                @Resources.Print.Invoice_Price
+            </th>
+            <th width="80">
+                @Resources.Print.Invoice_Total
+            </th>
+            @if (ViewBag.Print != true)
+            {
+                <th width="100"></th>
+            }
+        </tr>
     </thead>
 
 @foreach (var item in Model.InvoiceDetails) {

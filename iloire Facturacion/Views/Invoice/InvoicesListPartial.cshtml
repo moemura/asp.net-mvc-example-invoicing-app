@@ -9,24 +9,26 @@
 
 <table class="zebra-striped">
     <thead>
-        <th width="30">
-            ID
-        </th>
-        <th>
-            Customer
-        </th>
-        <th width="35%">
-            Invoice
-        </th>
-         <th width="90">
-            Total to pay
-        </th>
-        <th  width="80">
-            Date
-        </th>
-        <th  width="80">
-            Due Date
-        </th>               
+        <tr>
+            <th width="30">
+                ID
+            </th>
+            <th>
+                Customer
+            </th>
+            <th width="35%">
+                Invoice
+            </th>
+            <th width="90">
+                Total to pay
+            </th>
+            <th width="80">
+                Date
+            </th>
+            <th width="80">
+                Due Date
+            </th>
+        </tr>
     </thead>
 
 @foreach (var item in Model) {
@@ -42,7 +44,7 @@
                 @Html.Truncate(item.Notes, 100)
             </a>
         </td>
-         <td nowrap="nowrap" align="right"   style="align:text-right">
+         <td nowrap="nowrap" align="right"   style="text-align:right">
             @String.Format("{0:C}", item.TotalToPay)
         </td>
          <td>

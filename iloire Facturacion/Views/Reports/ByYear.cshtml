@@ -8,16 +8,16 @@
 @{
     ViewBag.Title = "ByYear";
 }
-@model int
+@model int?
            
 <h1>Year @Model</h1>
 
 
 @{
-    DateTime startQ1 = new DateTime(Model, 1, 1);
-    DateTime startQ2 = new DateTime(Model, 4, 1);
-    DateTime startQ3 = new DateTime(Model, 7, 1);
-    DateTime startQ4 = new DateTime(Model, 10, 1);
+    DateTime startQ1 = new DateTime(Model.Value, 1, 1);
+    DateTime startQ2 = new DateTime(Model.Value, 4, 1);
+    DateTime startQ3 = new DateTime(Model.Value, 7, 1);
+    DateTime startQ4 = new DateTime(Model.Value, 10, 1);
 }
 
 

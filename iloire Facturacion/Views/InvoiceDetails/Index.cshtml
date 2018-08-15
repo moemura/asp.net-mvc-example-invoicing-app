@@ -14,27 +14,30 @@
 
 <table class="zebra-striped">
     <thead>
-        <th>
-            Article
-        </th>
-        <th width="40">
-            Qty
-        </th>
-        <th width="70">
-            Price
-        </th>
-        <th width="70">
-            SubTotal
-        </th>
-        <th width="50">
-            VAT
-        </th>
-         <th width="80">
-          Total
-        </th> 
-        @if (ViewBag.Print != true){
-        <th width="100"></th>
-        }
+        <tr>
+            <th>
+                Article
+            </th>
+            <th width="40">
+                Qty
+            </th>
+            <th width="70">
+                Price
+            </th>
+            <th width="70">
+                SubTotal
+            </th>
+            <th width="50">
+                VAT
+            </th>
+            <th width="80">
+                Total
+            </th>
+            @if (ViewBag.Print != true)
+            {
+                <th width="100"></th>
+            }
+        </tr>
     </thead>
 
 @foreach (var item in Model) {

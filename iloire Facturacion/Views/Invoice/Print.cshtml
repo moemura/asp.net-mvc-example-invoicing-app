@@ -89,27 +89,30 @@
 
 <table class="zebra-striped">
     <thead>
-        <th>
-            @Resources.Print.Invoice_Item
-        </th>
-        <th width="40">
-            @Resources.Print.Invoice_Qty
-        </th>
-        <th width="75">
-            @Resources.Print.Invoice_Price
-        </th>
-        <th width="80">
-            @Resources.Print.Invoice_SubTotal
-        </th>
-        <th width="80">
-            @Resources.Print.Invoice_VAT
-        </th>
-         <th width="100">
-          @Resources.Print.Invoice_Total
-        </th> 
-        @if (ViewBag.Print != true){
-        <th width="100"></th>
-        }
+        <tr>
+            <th>
+                @Resources.Print.Invoice_Item
+            </th>
+            <th width="40">
+                @Resources.Print.Invoice_Qty
+            </th>
+            <th width="75">
+                @Resources.Print.Invoice_Price
+            </th>
+            <th width="80">
+                @Resources.Print.Invoice_SubTotal
+            </th>
+            <th width="80">
+                @Resources.Print.Invoice_VAT
+            </th>
+            <th width="100">
+                @Resources.Print.Invoice_Total
+            </th>
+            @if (ViewBag.Print != true)
+            {
+                <th width="100"></th>
+            }
+        </tr>
     </thead>
 
 @foreach (var item in Model.InvoiceDetails) {
