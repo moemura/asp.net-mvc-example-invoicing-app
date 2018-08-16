@@ -6,7 +6,7 @@
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/Site.print.css")" rel="stylesheet" type="text/css" media="print"/>
 
-    <script src="@Url.Content("~/Scripts/jquery-1.7.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-3.3.1.min.js")" type="text/javascript"></script>
 
     <!-- twitter bootstrap css library-->
     <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
@@ -17,16 +17,15 @@
     <script src="@Url.Content("~/Scripts/bootstrap-dropdown.js")" type="text/javascript"></script>
     
     <!-- jquery ui -->
-    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.11.min.js")" type="text/javascript"></script> 
-    <link href="@Url.Content("~/Content/themes/base/jquery.ui.all.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")" type="text/javascript"></script> 
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.css")" rel="stylesheet" type="text/css" />
  
-    <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-2.8.3.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.tablesorter.min.js")" type="text/javascript"></script>
 
     <script src="@Url.Content("~/Scripts/jquery-calendar.js")" type="text/javascript"></script>
    
     <script src="@Url.Content("~/Scripts/jquery.validate.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/methods_es.js")" type="text/javascript"></script>
 
@@ -101,6 +100,18 @@
              });
 
              $(".datefield").datepicker({ "dateFormat": 'dd/mm/yy' });
+
+             // fix datetime parse error on local culture
+             jQuery.validator.methods.date = function (value, element) {
+                 if (value) {
+                     try {
+                         $.datepicker.parseDate('dd/mm/yy', value);
+                     } catch (ex) {
+                         return false;
+                     }
+                 }
+                 return true;
+             };
 
              try { //if no data will raise error ¿?
                  if (typeof (sorter_options) != "undefined") {
